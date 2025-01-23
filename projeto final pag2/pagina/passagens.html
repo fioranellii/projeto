@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Passagens Aéreas</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1 tabindex="0">Passagens Aéreas</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html" tabindex="0">Início</a></li>
+                    <li><a href="galeria.html" tabindex="0">Galeria</a></li>
+                    <li><a href="passagens.html" tabindex="0">Passagens</a></li>
+                    <li><a href="sobre.html" tabindex="0">Sobre</a></li>
+                    <li><a href="contato.html" tabindex="0">Contato</a></li>
+                </ul>
+            </nav>
+            <div class="toggle-switch">
+                <input type="checkbox" id="modoEscuroToggle" class="toggle-input" tabindex="0">
+                <label for="modoEscuroToggle" class="toggle-label" tabindex="0">
+                    <span class="toggle-handle"></span>
+                </label>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="busca">
+            <h2 tabindex="0">Encontre as melhores passagens</h2>
+            <form class="form-busca">
+                <div class="form-group">
+                    <label for="origem" tabindex="0">Origem:</label>
+                    <input type="text" id="origem" placeholder="Cidade de origem" required tabindex="0">
+                </div>
+                <div class="form-group">
+                    <label for="destino" tabindex="0">Destino:</label>
+                    <input type="text" id="destino" placeholder="Cidade de destino" required tabindex="0">
+                </div>
+                <div class="form-group">
+                    <label for="data" tabindex="0">Data:</label>
+                    <input type="date" id="data" required tabindex="0">
+                </div>
+                <button type="submit" tabindex="0">Buscar Passagens</button>
+            </form>
+        </section>
+
+        <section class="destinos">
+            <h2 tabindex="0">Destinos Populares</h2>
+            <div class="destinos-grid">
+                <div class="destino-card" tabindex="0">
+                    <img src="images/paris.jpg" alt="Paris, França" tabindex="0">
+                    <h3 tabindex="0">Paris, França</h3>
+                    <p tabindex="0">A partir de <strong>R$ 1.500</strong></p>
+                </div>
+                <div class="destino-card" tabindex="0">
+                    <img src="images/tokyo.jpg" alt="Tokyo, Japão" tabindex="0">
+                    <h3 tabindex="0">Tokyo, Japão</h3>
+                    <p tabindex="0">A partir de <strong>R$ 2.800</strong></p>
+                </div>
+                <div class="destino-card" tabindex="0">
+                    <img src="images/novayork.jpeg" alt="Nova York, EUA" tabindex="0">
+                    <h3 tabindex="0">Nova York, EUA</h3>
+                    <p tabindex="0">A partir de <strong>R$ 2.200</strong></p>
+                </div>
+            </div>
+        </section>
+
+        <section class="ofertas">
+            <h2 tabindex="0">Ofertas Especiais</h2>
+            <div class="ofertas-grid">
+                <div class="oferta-card" tabindex="0">
+                    <img src="images/rio.jpg" alt="Rio de Janeiro, Brasil" tabindex="0">
+                    <h3 tabindex="0">Rio de Janeiro, Brasil</h3>
+                    <p tabindex="0">A partir de <strong>R$ 400</strong></p>
+                    <p tabindex="0"><em>Promoção por tempo limitado!</em></p>
+                </div>
+                <div class="oferta-card" tabindex="0">
+                    <img src="images/londres.jpg" alt="Londres, Reino Unido" tabindex="0">
+                    <h3 tabindex="0">Londres, Reino Unido</h3>
+                    <p tabindex="0">A partir de <strong>R$ 1.800</strong></p>
+                    <p tabindex="0"><em>Desconto de 20%!</em></p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3 tabindex="0">Links Úteis</h3>
+                <ul>
+                    <li><a href="politica-de-privacidade.html" tabindex="0">Política de Privacidade</a></li>
+                    <li><a href="termos-de-uso.html" tabindex="0">Termos de Uso</a></li>
+                    <li><a href="faq.html" tabindex="0">FAQ</a></li>
+                </ul>
+            </div>
+    
+            <div class="footer-section">
+                <h3 tabindex="0">Newsletter</h3>
+                <p tabindex="0">Inscreva-se para receber ofertas exclusivas!</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Seu e-mail" required tabindex="0">
+                    <button type="submit" tabindex="0">Inscrever</button>
+                </form>
+            </div>
+    
+            <div class="footer-section">
+                <h3 tabindex="0">Contato</h3>
+                <ul>
+                    <li tabindex="0">Email: contato@passagenseconomicas.com</li>
+                    <li tabindex="0">Telefone: (11) 1234-5678</li>
+                    <li tabindex="0">Endereço: Rua das Viagens, 123 - São Paulo, SP</li>
+                </ul>
+            </div>
+        </div>
+    
+        <div class="footer-bottom">
+            <p tabindex="0">&copy; 2023 Passagens Econômicas. Todos os direitos reservados.</p>
+            <p tabindex="0">Desenvolvido por <a href="#" tabindex="0">Equipe Passagens Econômicas</a></p>
+            <button id="voltar-ao-topo" tabindex="0">↑ Voltar ao Topo</button>
+        </div>
+    </footer>
+
+    <script src="scripts/escuro.js"></script>
+    <script src="scripts/script.js"></script>
+</body>
+</html>

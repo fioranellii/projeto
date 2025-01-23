@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1 tabindex="0">Diário de Viagens</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html" tabindex="0">Início</a></li>
+                    <li><a href="galeria.html" tabindex="0">Galeria</a></li>
+                    <li><a href="passagens.html" tabindex="0">Passagens</a></li>
+                    <li><a href="sobre.html" tabindex="0">Sobre</a></li>
+                    <li><a href="contato.html" tabindex="0">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="toggle-switch">
+            <input type="checkbox" id="modoEscuroToggle" class="toggle-input" tabindex="0">
+            <label for="modoEscuroToggle" class="toggle-label" tabindex="0">
+                <span class="toggle-handle"></span>
+            </label>
+        </div>
+    </header>
+
+    <main>
+        <section class="contato">
+            <h2 tabindex="0">Entre em Contato</h2>
+            <form action="#" method="post" class="form-contato">
+                <div class="form-group">
+                    <label for="nome" tabindex="0">Nome:</label>
+                    <input type="text" id="nome" name="nome" required tabindex="0">
+                </div>
+                <div class="form-group">
+                    <label for="email" tabindex="0">E-mail:</label>
+                    <input type="email" id="email" name="email" required tabindex="0">
+                </div>
+                <div class="form-group">
+                    <label for="mensagem" tabindex="0">Mensagem:</label>
+                    <textarea id="mensagem" name="mensagem" rows="5" required tabindex="0"></textarea>
+                </div>
+                <div class="form-buttons">
+                    <button type="submit" class="btn" tabindex="0">Enviar</button>
+                    <button type="button" id="limpar" class="btn btn-limpar" tabindex="0">Limpar</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3 tabindex="0">Links Úteis</h3>
+                <ul>
+                    <li><a href="politica-de-privacidade.html" tabindex="0">Política de Privacidade</a></li>
+                    <li><a href="termos-de-uso.html" tabindex="0">Termos de Uso</a></li>
+                    <li><a href="faq.html" tabindex="0">FAQ</a></li>
+                </ul>
+            </div>
+    
+            <div class="footer-section">
+                <h3 tabindex="0">Newsletter</h3>
+                <p tabindex="0">Inscreva-se para receber novidades e dicas de viagem!</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Seu e-mail" required tabindex="0">
+                    <button type="submit" tabindex="0">Inscrever</button>
+                </form>
+            </div>
+    
+            <div class="footer-section">
+                <h3 tabindex="0">Contato</h3>
+                <ul>
+                    <li tabindex="0">Email: contato@diariodeviagens.com</li>
+                    <li tabindex="0">Telefone: (11) 1234-5678</li>
+                    <li tabindex="0">Endereço: Rua das Viagens, 123 - São Paulo, SP</li>
+                </ul>
+            </div>
+        </div>
+    
+        <div class="footer-bottom">
+            <p tabindex="0">&copy; 2023 Diário de Viagens. Todos os direitos reservados.</p>
+            <p tabindex="0">Desenvolvido por <a href="#" tabindex="0">Equipe Diário de Viagens</a></p>
+            <button id="voltar-ao-topo" tabindex="0">↑ Voltar ao Topo</button>
+        </div>
+    </footer>
+    <script src="scripts/contato.js"></script>
+    <script src="scripts/escuro.js"></script>
+    <script src="scripts/script.js"></script>
+</body>
+</html>
